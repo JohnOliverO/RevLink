@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="RevLink.Mobile.Views.LoginPage" BackgroundColor="#000000">
+ <ScrollView><VerticalStackLayout Padding="24,64,24,24" Spacing="14">
+  <Label FontSize="44" FontAttributes="Bold,Italic" HorizontalTextAlignment="Center"><Label.FormattedText><FormattedString><Span Text="REV" TextColor="White"/><Span Text="LINK" TextColor="#D4FF00"/></FormattedString></Label.FormattedText></Label>
+  <Label Text="REV UP. LINK UP." TextColor="#D4FF00" FontSize="13" HorizontalTextAlignment="Center" CharacterSpacing="3"/>
+  <Label x:Name="Heading" Text="Entre na comunidade" FontSize="23" FontAttributes="Bold" Margin="0,24,0,0"/>
+  <Entry x:Name="EmailBox" Placeholder="E-mail" Keyboard="Email"/>
+  <Entry x:Name="TagBox" Placeholder="DriverTag (apelido)" IsVisible="False"/>
+  <Entry x:Name="PasswordBox" Placeholder="Senha" IsPassword="True"/>
+  <Entry x:Name="ConfirmBox" Placeholder="Confirmar senha" IsPassword="True" IsVisible="False"/>
+  <Button x:Name="Submit" Text="ENTRAR" Clicked="SubmitClicked"/>
+  <Button x:Name="Toggle" Text="Criar conta" BackgroundColor="#161616" TextColor="#D4FF00" Clicked="ToggleClicked"/>
+  <Label x:Name="Status" TextColor="#FF5252" HorizontalTextAlignment="Center"/>
+  <Button Text="Configurar endereço da API" BackgroundColor="#000000" TextColor="#A6A6A6" FontSize="12" Clicked="ConfigureClicked"/>
+ </VerticalStackLayout></ScrollView>
+</ContentPage>

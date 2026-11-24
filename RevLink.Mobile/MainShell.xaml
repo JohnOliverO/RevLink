@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:views="clr-namespace:RevLink.Mobile.Views" x:Class="RevLink.Mobile.MainShell" FlyoutBehavior="Disabled" Shell.BackgroundColor="#000000" Shell.ForegroundColor="#D4FF00" Shell.TitleColor="#FFFFFF" Shell.TabBarBackgroundColor="#121212" Shell.TabBarForegroundColor="#D4FF00" Shell.TabBarTitleColor="#D4FF00" Shell.TabBarUnselectedColor="#AAAAAA">
+ <TabBar>
+  <ShellContent Title="Feed" Icon="feed.png" ContentTemplate="{DataTemplate views:FeedPage}" Route="feed"/>
+  <ShellContent Title="Garagem" Icon="garage.png" ContentTemplate="{DataTemplate views:GaragePage}" Route="garage"/>
+  <ShellContent Title="Criar" Icon="create.png" ContentTemplate="{DataTemplate views:CreatePage}" Route="create"/>
+  <ShellContent Title="Eventos" Icon="events.png" ContentTemplate="{DataTemplate views:EventsPage}" Route="events"/>
+  <ShellContent Title="Conta" Icon="account.png" ContentTemplate="{DataTemplate views:AccountPage}" Route="account"/>
+ </TabBar>
+</Shell>
